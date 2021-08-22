@@ -1,1 +1,1 @@
-web: gunicorn Codefury.wsgi
+web: gunicorn Codefury_Project.wsgi
