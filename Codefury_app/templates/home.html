@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,32 +11,31 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="favicon.webp" rel="icon">
-  <link href="static/img/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{% static 'img/favicon.webp'%}" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <scrip src="https://kit.fontawesome.com/631054744f.js"crossorigin="anonymous"></script>
   <!-- Vendor CSS Files -->
-  <link href="static/img/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="static/img/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="static/img/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="static/img/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="static/img/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="static/img/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="static/img/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static  'vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static  'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="static/img/assets/css/style.css" rel="stylesheet">
+  <link href="{% static 'css/style.css'%}" rel="stylesheet">
   
   <!----bootstrap-->
-  <link href="static/img/assets/vendors/icofont/icofont.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="static/img/assets/vendors/bootstrap/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="static/img/assets/vendors/aos/aos.css" />
-  <link rel="stylesheet" href="static/img/assets/css/styles.css" />
-	<link rel="shortcut icon" href="static/img/assets/images/logo.png" type="image/png">
-  <link rel="stylesheet" href="static/img/assets/vendors/jquery/jquery.min.js" />
+  <link href="{% static 'vendors/icofont/icofont.min.css'%}" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'vendors/bootstrap/css/bootstrap.min.css'%}"/>
+  <link rel="stylesheet" href="{% static  'vendors/aos/aos.css'%}" />
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+	<link rel="shortcut icon" href="{% static 'img/logo.png' %]" type="image/png">
+  <link rel="stylesheet" href="{% static 'vendors/jquery/jquery.min.js' %}" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -80,7 +80,7 @@
       
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="static/img/assets/img/hero-img.png" class="img-fluid animated" alt="">
+          <img src="{% static 'img/hero-img.png' %}" class="img-fluid animated" alt="">
         </div>
       </div>
     </div>
@@ -264,11 +264,11 @@
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="static/img/assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="{% static  'img/portfolio/portfolio-9.jpg' %}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>Web 3</h4>
               <p>Web</p>
-              <a href="static/img/assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="{% static 'img/portfolio/portfolio-9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -416,17 +416,18 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="static/img/assets/vendor/aos/aos.js"></script>
-  <script src="static/img/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="static/img/assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="static/img/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="static/img/assets/vendor/php-email-form/validate.js"></script>
-  <script src="static/img/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="static/img/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/waypoints/noframework.waypoints.js' %}"></script>
 
   <!-- Template Main JS File -->
-  <script src="static/img/assets/js/main.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script1.js"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script  src="./script1.js"></script>
 
 </body>
 
