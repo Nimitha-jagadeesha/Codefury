@@ -113,7 +113,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled, #header.header-inner-pages {
-  background: rgba(40, 58, 90, 0.9);
+  background: #2A1B3D;
+
 }
 
 #header .logo {
@@ -367,7 +368,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: #37517e;
+  background: linear-gradient(to bottom right, #2A1B3D, #DB3F87);
 }
 
 #hero .container {
@@ -792,11 +793,12 @@ section {
   font-weight: 600;
   color: #202020;
 }
+
 footer{
   
   bottom: 0px;
   width: 100%;
-  background: #37517e;
+   background: linear-gradient(to bottom right, #2A1B3D, #DB3F87);
   color: #ffff;
 }
 .main-content{
