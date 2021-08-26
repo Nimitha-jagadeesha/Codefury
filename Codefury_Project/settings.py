@@ -123,5 +123,5 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD='django.db.models.BigAutoField' 
-
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 django_heroku.settings(locals())
