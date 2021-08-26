@@ -432,27 +432,8 @@ h1, h2, h3, h4, h5, h6 {
   background: #209dd8;
 }
 
-#hero .btn-watch-video {
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  transition: 0.5s;
-  margin: 10px 0 0 25px;
-  color: #fff;
-  line-height: 1;
-}
 
-#hero .btn-watch-video i {
-  line-height: 0;
-  color: #fff;
-  font-size: 32px;
-  transition: 0.3s;
-  margin-right: 8px;
-}
 
-#hero .btn-watch-video:hover i {
-  color: #47b2e4;
-}
 
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
@@ -472,6 +453,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   #hero .hero-img img {
     width: 50%;
+    z-index: -100;
   }
 }
 
@@ -598,7 +580,126 @@ section {
 # gallery
 --------------------------------------------------------------*/
 
+.carousel {
+  background:#4b1a55;
+  width: 600px;
+  position: center;
+}
 
+.carousel-item {
+height: 500px;
+}
+
+.carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px;
+  height: 100%;
+
+  
+}
+
+
+/*--------------------------------------------------------------
+# annoucments
+--------------------------------------------------------------*/
+.ranking {
+  list-style-type: none;
+  margin-bottom: 1em;
+  background:linear-gradient(to bottom right, #2A1B3D, #DB3F87);
+  border:2px solid #ffff;
+  position: fixed;
+  height: 60px;
+  width: 80px;
+  font-size:25px;
+  padding:8px;
+  border-radius:10px;
+  margin-top: 7em;
+  float:right;
+  right:0;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  cursor: pointer;
+    -webkit-animation: disapear 1s;
+    -webkit-animation-fill-mode: forwards; 
+    animation: disapear 1s;
+    animation-fill-mode: forwards;
+}
+
+.toggle
+{
+    color:white;
+    margin-top:0px;
+    
+}
+.toggle-content {
+display: none;
+height: 0;
+overflow: hidden;
+transition: height 350ms ease-in-out;
+height: 350px;
+ width: 300px;
+ border: 2px solid blue;
+ border-radius:10px;
+ margin-top: 11rem;
+ float:right;
+ position:fixed;
+ right:0;
+ background-color: white;
+ font-size: 25px;
+ transition: 1s;
+ -webkit-animation: disapear2 1s;
+ -webkit-animation-fill-mode: forwards; 
+ animation: disapear2 1s;
+ animation-fill-mode: forwards;
+}
+
+@keyframes disapear{
+  
+50% {
+  
+  -webkit-transform: translateX(30%);
+  transform: translateX(30%);
+}
+
+100% {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%); 
+}    
+}
+@keyframes disapear2{
+  
+0% {
+  
+  -webkit-transform: translateX(200%);
+  transform: translateX(200%);
+}
+
+100% {
+  -webkit-transform: translatXY(0%);
+  transform: translateX(0%); 
+}    
+}
+@media screen and (max-width:480px)
+{
+  .toggle-content
+  {
+      width:200px;
+      font-size:18px ;
+      z-index: 20;
+      
+  }
+}
+@media screen and (max-width:300px)
+{
+  .toggle-content
+  {
+      width:70vw;
+      font-size:16px ;
+      
+  }
+}
 
 /*--------------------------------------------------------------
 # About Us
@@ -892,7 +993,6 @@ footer{
   color:#fff
 }
 
-
  
 .bottom center{
   padding: 5px;
@@ -922,3 +1022,6 @@ footer{
     margin: 5px 0;
   }
 }
+
+
+
