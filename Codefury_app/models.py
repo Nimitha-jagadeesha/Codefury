@@ -7,5 +7,5 @@ class Announcment(models.Model):
 
 class Contact(models.Model):
     email= models.EmailField(blank = False)
-    message= models.TextField()
+    message= models.TextField(max_length=300)
     

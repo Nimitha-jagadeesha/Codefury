@@ -1,4 +1,5 @@
 {% load static %}
+{% load crispy_forms_tags %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -354,24 +355,14 @@
     </div>
     <div class="right box">
       <h2>Contact us</h2>
-      <div class="content">
-
-        <form class="m-4" method="POST" action="adminonly.php" onsubmit="disableButton()">
-          <div class="form-group">
-            <label for="inputEmail">Email*</label>
-            <input type="email" class="form-control" id="inputemail" placeholder="Email" name="email"
-              style="background-color:white;" required>
-          </div>
-          <div class="form-group">
-            <label for="inputmessage">Message*</label>
-            <textarea rows="4" cols="200" type="text" class="form-control" id="inputmessage" placeholder="Message"
-              name="message" required></textarea>
-          </div>
-          <br>
-          <button type="submit" name="check" id="itscorrect" class="btn btn-dark"
+      <div class="content-section">
+        <form class="m-4" method="POST">
+          <fieldset class="form-group">
+          {{form|crispy}}
+        </fieldset>
+          <button type="submit" class="btn btn-dark"
             style="background-color:black;">Send</button>
         </form>
-
       </div>
     </div>
 
