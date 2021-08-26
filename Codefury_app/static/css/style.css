@@ -619,6 +619,7 @@ height: 500px;
   margin-top: 7em;
   float:right;
   right:0;
+  opacity:0.9;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   cursor: pointer;
