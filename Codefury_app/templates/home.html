@@ -1,29 +1,31 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-      <!-- Required meta tags always come first -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
   <title>Codefury</title>
   <!--temple main css file-->
   <link rel="styleshee" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
-   <!--google fonts-->
-   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://kit.fontawesome.com/631054744f.js"crossorigin="anonymous"></script>
-   <!-- Favicons -->
-  <link href="{% static 'img/favicon.png' %}" rel="icon">
-  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">    
-  
+  <!--google fonts-->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://kit.fontawesome.com/631054744f.js" crossorigin="anonymous"></script>
+  <!-- Favicons -->
+  <link href="{% static 'img/favicon.webp' %}" rel="icon">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
   <!--bootstrap-->
-  <link rel="stylesheet" href="{% static 'node_modules/bootstrap/dist/css/bootstrap.min.css' %}">
-  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
   <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
   <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
@@ -31,374 +33,374 @@
   <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
 
 </head>
-  <body>
-               
-                     <!-- ======= Header ======= -->
-                      <header id="header" class="fixed-top ">
-                        <div class="container d-flex align-items-center">
 
-                          <h1 class="logo me-auto"><a href="index.html" style="text-decoration:none;">CODEFURY</a></h1>
-                          <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+<body>
 
-                          <nav id="navbar" class="navbar">
-                            <ul>
-                              <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                              <li><a class="nav-link scrollto" href="#about">About</a></li>
-                              <li><a class="nav-link scrollto" href="#sponsership">Sponsers</a></li>
-                              <li><a class="nav-link   scrollto" href="#gallery">Gallery</a></li>
-                              <!-- <li><a class="nav-link scrollto" href="#victors">Victors</a></li> -->
-                              <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
-                              
-                            </ul>
-                            <i class="bi bi-list mobile-nav-toggle"></i>
-                          </nav><!-- .navbar -->
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
 
-                        </div>
-                      </header>
-                      <!-- End Header -->
-                          <!--annoucments-->
-                     <div class="ranking" onclick="show_ann()" id="ex">
-                      <p class="toggle">
-                        <i class="fa fa-bullhorn " aria-hidden="true" style="font-size:42px; color:#ffff;"></i>
-                      </p>
-                    </div>
-                      <div class="toggle-content" id="example" >
-                        <center style="border-bottom:1px solid white;">Announcements   
-                            <i class="fa fa-window-close" style="cursor:pointer;margin-top:-2px;float:right;font-size:32px;color:white;z-index:200;" onclick="hide_ann()"></i>
-                        </center>
-                        
-                      </div>
+      <h1 class="logo me-auto"><a href="index.html" style="text-decoration:none;">CODEFURY</a></h1>
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-                     
-                     
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#sponsership">Sponsers</a></li>
+          <li><a class="nav-link   scrollto" href="#gallery">Gallery</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#victors">Victors</a></li> -->
+          <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
+  <!-- End Header -->
+  <!--annoucments-->
+  <div class="ranking" onclick="show_ann()" id="ex" style="z-index: 1;">
+    <p class="toggle">
+      <i class="fa fa-bullhorn " aria-hidden="true" style="font-size:42px; color:#ffff;"></i>
+    </p>
+  </div>
+  <div class="toggle-content" id="example" >
+    <center style="border-bottom:1px solid white;">Announcements
+      <i class="fa fa-window-close"
+        style="cursor:pointer;margin-top:-2px;float:right;font-size:32px;color:blue;z-index:200;"
+        onclick="hide_ann()"></i>
+    </center>
+
+  </div>
 
 
-                     <!-- ======= Hero Section ======= -->
-                    <section id="hero" class="d-flex align-items-center">
 
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-                            <!-- <h2 >IEEE UVCE presents</h2>
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+          data-aos="fade-up" data-aos-delay="200">
+          <!-- <h2 >IEEE UVCE presents</h2>
                             <h1>CODEFURY</h1> -->
-                            <h2 class = "name">IEEE UVCE Presents</h2> <br><h1 class="name">CODEFURY</h1></p>
-                            </div>
-                            
-                          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-                            <img src="{% static 'img/hero-img.png' %}" class="img-fluid animated" alt="">
-                          </div>
-                        </div>
-                      </div>
+          <h2 class="name"> IEEE UVCE Presents</h2> <br>
+          <h1 class="name">CODEFURY</h1>
+          </p>
+        </div>
 
-                    </section><!-- End Hero -->
-                 
-    
-                    
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="{% static 'img/hero-img.png' %}" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
 
-                      
-
-                  <!-- ======= About Us Section ======= -->
-                  <section id="about" class="about section1-bg">
-                    <div class="container" data-aos="fade-up">
-
-                      <div class="section-title">
-                        <h2>README.MD</h2>
-                      </div>
-
-                      <div class="row content">
-                        <div class="col-lg-6">
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
-                          </p>
-                          <ul>
-                            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-                            <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-                            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-                          </ul>
-                        </div>
-                        <div class="col-lg-6 pt-4 pt-lg-0">
-                          <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum.
-                          </p>
-                          <a href="#" class="btn-learn-more">Learn More</a>
-                        </div>
-                      </div>
-
-                    </div>
-                  </section>
-                  <!-- End About Us Section -->
-                  <!-- ======= Cliens Section ======= -->
-                  
+  </section><!-- End Hero -->
 
 
-                                    <section id="sponsership" class = "section2-bg">
-
-                                      <div class="section-title">
-                                        <h2>OUR SPONSOR</h2>
-                                      </div>
-
-                                      <div class="container">
-                                        <div class="row">
-                                          <div class="col-lg-3 col-md-6 col=sm-6">
-                                            <a href="https://www.geeksforgeeks.org/"><img class="logos" src="{%static 'img/logo.png' %}" alt=""></a>
-                                            <p class = "s">GeeksForGeeks</p>
-                                          </div>
-                                          <div class="col-lg-3 col-md-6 col=sm-6">
-                                            <a href="https://www.geeksforgeeks.org/"><img class="logos" src="{% static 'img/logo.png' %}" alt=""></a>
-                                            <p class = "s">GeeksForGeeks</p>
-                                          </div>
-                                          <div class="col-lg-3 col-md-6 col=sm-6">
-                                            <a href="https://www.geeksforgeeks.org/"><img class="logos" src="{% static 'img/logo.png' %}" alt=""></a>
-                                            <p class = "s">GeeksForGeeks</p>
-                                          </div>
-                                          <div class="col-lg-3 col-md-6 col=sm-6">
-                                            <a href="https://www.geeksforgeeks.org/"><img class="logos" src="{% static 'img/logo.png' %}" alt=""></a>
-                                            <p class = "s">GeeksForGeeks</p>
-                                          </div>
-                                        </div>
-                                      </div>
 
 
-                                    </section>
-
-                  
-                  <!-- End Cliens Section -->
-
-                  <!-- ======= Portfolio Section ======= -->
-                  <section id="gallery" class="gallery section3-bg">
-                       <div class="container" data-aos="fade-up">
-
-                              <div class="section-title">
-                                <h2>ASSETS</h2>
-                                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                              </div>
-                      <div>
-                                <!---add photos-->
-                                <div class="row row-content">
-                                  <!--col1-->
-                                  <div class="col">
-                                    <div id="mycarousel1" class="carousel slide" data-ride="carousel">
-                                      <div class="carousel-inner" role="listbox">
-                                            <div class="carousel-item active">
-                                            <img class="d-block img-fluid" src="{% static 'img/1.jpg' %}" alt="#">
-                                            </div>
-                                            <div class="carousel-item">
-                                              <img class="d-block img-fluid" src="{% static 'img/2.jpg' %}" alt="#">
-                                            </div>
-                                            <div class="carousel-item">
-                                              <img class="d-block img-fluid" src="{% static 'img/3.jpg' %}" alt="#">
-                                            </div>
-                                      </div>
-                                      <ol class="carousel-indicators">
-                                        <li data-target="#mycarousel1" data-slide-to="0" class="active"></li>
-                                        <li data-target="#mycarousel1" data-slide-to="1"></li>
-                                        <li data-target="#mycarousel1" data-slide-to="2"></li>
-                                    </ol>
-                                    <a class="carousel-control-prev" href="#mycarousel1" role="button" data-slide="prev">
-                                      <span class="carousel-control-prev-icon"></span>
-                                  </a>
-                                  <a class="carousel-control-next" href="#mycarousel1" role="button" data-slide="next">
-                                      <span class="carousel-control-next-icon"></span>
-                                  </a>
-                                    </div>
-                                  </div>
-                                  <br>
-                                  <br>
 
 
-                                    <!--col2-->
-                                  <div class="col">
-                                    <div id="mycarousel2" class="carousel slide" data-ride="carousel">
-                                      <div class="carousel-inner" role="listbox">
-                                            <div class="carousel-item active">
-                                            <img class="d-block img-fluid" src="{% static 'img/1.jpg' %}" alt="#">
-                                            </div>
-                                            <div class="carousel-item">
-                                              <img class="d-block img-fluid" src="{% static 'img/2.jpg' %}" alt="#">
-                                            </div>
-                                            <div class="carousel-item">
-                                              <img class="d-block img-fluid" src="{% static 'img/3.jpg' %}" alt="#">
-                                            </div>
-                                      </div>
-                                      <ol class="carousel-indicators">
-                                        <li data-target="#mycarousel2" data-slide-to="0" class="active"></li>
-                                        <li data-target="#mycarousel2" data-slide-to="1"></li>
-                                        <li data-target="#mycarousel2" data-slide-to="2"></li>
-                                    </ol>
-                                    <a class="carousel-control-prev" href="#mycarousel2" role="button" data-slide="prev">
-                                      <span class="carousel-control-prev-icon"></span>
-                                  </a>
-                                  <a class="carousel-control-next" href="#mycarousel2" role="button" data-slide="next">
-                                      <span class="carousel-control-next-icon"></span>
-                                  </a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                         
-    
-                   </section>
-                   <!-- End Portfolio Section -->
-                  <!-- ======= Frequently Asked Questions Section ======= -->
-                      <section id="faq" class="faq section-bg">
-                        <div class="container" data-aos="fade-up">
+  <!-- ======= About Us Section ======= -->
+  <section id="about" class="about section1-bg">
+    <div class="container" data-aos="fade-up">
 
-                          <div class="section-title">
-                            <h2>Frequently Asked Questions</h2>
-                            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                          </div>
+      <div class="section-title">
+        <h2>README.MD</h2>
+      </div>
 
-                          <div class="faq-list">
-                            <ul>
-                              <li data-aos="fade-up" data-aos-delay="100">
-                                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                                <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                                  <p>
-                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                                  </p>
-                                </div>
-                              </li>
+      <div class="row content">
+        <div class="col-lg-6">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua.
+          </p>
+          <ul>
+            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+            <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <p>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <a href="#" class="btn-learn-more">Learn More</a>
+        </div>
+      </div>
 
-                              <li data-aos="fade-up" data-aos-delay="200">
-                                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                                <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                                  <p>
-                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                                  </p>
-                                </div>
-                              </li>
+    </div>
+  </section>
+  <!-- End About Us Section -->
+  <!-- ======= Cliens Section ======= -->
 
-                              <li data-aos="fade-up" data-aos-delay="300">
-                                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                                  <p>
-                                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                                  </p>
-                                </div>
-                              </li>
 
-                              <li data-aos="fade-up" data-aos-delay="400">
-                                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                                <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                                  <p>
-                                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
-                                  </p>
-                                </div>
-                              </li>
 
-                              <li data-aos="fade-up" data-aos-delay="500">
-                                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                                <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                                  <p>
-                                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
-                                  </p>
-                                </div>
-                              </li>
+  <section id="sponsership" class="section2-bg">
 
-                            </ul>
-                          </div>
+    <div class="section-title">
+      <h2>OUR SPONSOR</h2>
+    </div>
 
-                        </div>
-                      </section>
-                      <!-- End Frequently Asked Questions Section -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <a href="https://www.geeksforgeeks.org/"><img class="logos" src="{%static 'img/logo.png' %}" alt=""></a>
+          <p class="s">GeeksForGeeks</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <a href="https://www.geeksforgeeks.org/"><img class="logos" src="{% static 'img/logo.png' %}" alt=""></a>
+          <p class="s">GeeksForGeeks</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <a href="https://www.geeksforgeeks.org/"><img class="logos" src="{% static 'img/logo.png' %}" alt=""></a>
+          <p class="s">GeeksForGeeks</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <a href="https://www.geeksforgeeks.org/"><img class="logos" src="{% static 'img/logo.png' %}" alt=""></a>
+          <p class="s">GeeksForGeeks</p>
+        </div>
+      </div>
+    </div>
 
-            </body>          
-           <!-- ======= Footer ======= -->
-                                          <footer data-aos="fade-up" id="contact">
-                                            <div class="main-content p-1">
-                                              <div class="left box">
-                                                <h2>About us</h2>
-                                                  <div class="content">
-                                                      <p>The IEEE Student Branch of UVCE has been interminably striving to hoist the student community and empower its members. The organization's commitment to enhancing and upgrading the core knowledge base of the students to the industry standards is reflected  in the host of activities organized by it throughout the year. Rekindled in 2001, the student branch has come to be one of the most recognized student branches across the Region 10 of IEEE.</p>
 
-                                                      <div class="social m-4 text-center">
-                                                      <a href="https://www.facebook.com/Ieee.uvce.cs/" target="_blank"><span class="fab fa-facebook-f"></span></a>
-                                                      <a href="https://instagram.com/ieee.uvce.cs?igshid=31c9md76rg98" target="_blamk"><span class="fab fa-instagram"></span></a>
-                                                      <a href="https://twitter.com/ieeeuvce?lang=en" target="_blank"><span class="fab fa-twitter"></span></a>
-                                                      <a href="https://in.linkedin.com/in/ieee-uvce-66563332" target="_blank"><span class="fab fa-linkedin"></span></a>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                              <div class="center box">
-                                                <h2>Contact</h2>
-                                                      <div class="content">
-                                                          <div class="place">
+  </section>
 
-                                                            <a href="https://goo.gl/maps/P43RC7Qphrq" target="_blank">
-                                                                <span class="fas fa-map-marker-alt"></span></a>
-                                                              <span class="text"> UVCE, K R Circle, Bengaluru</span>
-                                                            
-                                                          </div>
-                                                          <div class="phone">
-                                                            <a id="call" href ="#">
-                                                              <span class="fas fa-phone-alt"></span></a>
-                                                            <span class="text">XYZ</span>
-                                                          </div>
-                                                          <div class="email">
-                                                            <a href="mailto:cs.uvce.ieee@gmail.com " target="_blank">
-                                                              <span class="fas fa-envelope"></span></a>
-                                                              <span class="text">cs.uvce.ieee@gmail.com</span>
-                                                          </div>
-                                                      </div>
-                                                </div>
-                                                      <div class="right box">
-                                                                <h2>Contact us</h2>
-                                                                  <div class="content">
-                                                                    
-                                                                      <form class="m-4" method="POST" action="adminonly.php" onsubmit="disableButton()">
-                                                          <div class="form-group">
-                                                              <label for="inputEmail">Email*</label>
-                                                              <input type="email" class="form-control" id="inputemail" placeholder="Email" name="email" style="background-color:white;" required>
-                                                          </div>
-                                                          <div class="form-group">
-                                                              <label for="inputmessage">Message*</label>
-                                                              <textarea rows="4" cols="200" type="text" class="form-control" id="inputmessage" placeholder="Message" name="message" required></textarea>
-                                                          </div>
-                                                          <br>
-                                                          <button type="submit" name="check" id="itscorrect" class="btn btn-dark" style="background-color:black;">Send</button>
-                                                      </form>
 
-                                                                  </div>
-                                                              </div>
+  <!-- End Cliens Section -->
 
-                                                            </div>
+  <!-- ======= Portfolio Section ======= -->
+  <section id="gallery" class="gallery section3-bg">
+    <div class="container" data-aos="fade-up">
 
-                                                      <div class="bottom">
-                                                      <center>
-                                                                <span class="credit">Created by <a href="http://www.ieeeuvce.in/" target="_blank">IEEE UVCE</a>
-                                                                  <span class="far fa-copyright"></span> 2020 - All rights reserved.</span>
+      <div class="section-title">
+        <h2>ASSETS</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+          in iste officiis commodi quidem hic quas.</p>
+      </div>
+      <div>
+        <!---add photos-->
+        <div class="container">
+          <div id="mycarousel1" class="carousel slide col-12" data-ride="carousel"
+            style="background-color: transparent;">
+            <div class="carousel-inner" role="listbox" style="z-index: -9;">
+              <div class="carousel-item active">
+                <img class="d-block" style="width: 100%;height: auto;" src="{% static 'img/1.jpg' %}" alt="#">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" style="width: 100%;height: auto;" src="{% static 'img/2.jpg' %}" alt="#">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block" style="width: 100%;height: auto;" src="{% static 'img/3.jpg' %}" alt="#">
+              </div>
+              <ol class="carousel-indicators">
+                <li data-target="#mycarousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#mycarousel1" data-slide-to="1"></li>
+                <li data-target="#mycarousel1" data-slide-to="2"></li>
+              </ol>
+              <a class="carousel-control-prev" href="#mycarousel1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#mycarousel1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- End Portfolio Section -->
+  <!-- ======= Frequently Asked Questions Section ======= -->
+  <section id="faq" class="faq section-bg">
+    <div class="container" data-aos="fade-up">
 
-                                                      </center>
-                                                      </div>
-                                          </footer>
-                                          <!-- End Footer -->
+      <div class="section-title">
+        <h2>Frequently Asked Questions</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+          in iste officiis commodi quidem hic quas.</p>
+      </div>
 
-                                        <div id="preloader"></div>
-                                        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+      <div class="faq-list">
+        <ul>
+          <li data-aos="fade-up" data-aos-delay="100">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
+              data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i
+                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+              <p>
+                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
+                gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="200">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2"
+              class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i
+                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
+                donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit
+                ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="300">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3"
+              class="collapsed">Dolor sit amet consectetur adipiscing elit? <i
+                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum
+                integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt.
+                Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="400">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4"
+              class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i
+                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc
+                vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus
+                gravida quis blandit turpis cursus in.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="500">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5"
+              class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem
+              dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada
+                nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis
+                tellus in metus vulputate eu scelerisque.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Frequently Asked Questions Section -->
+
+</body>
+<!-- ======= Footer ======= -->
+<footer data-aos="fade-up" id="contact">
+  <div class="main-content p-1">
+    <div class="left box">
+      <h2>About us</h2>
+      <div class="content">
+        <p>The IEEE Student Branch of UVCE has been interminably striving to hoist the student community and empower its
+          members. The organization's commitment to enhancing and upgrading the core knowledge base of the students to
+          the industry standards is reflected in the host of activities organized by it throughout the year. Rekindled
+          in 2001, the student branch has come to be one of the most recognized student branches across the Region 10 of
+          IEEE.</p>
+
+        <div class="social m-4 text-center">
+          <a href="https://www.facebook.com/Ieee.uvce.cs/" target="_blank"><span class="fab fa-facebook-f"></span></a>
+          <a href="https://instagram.com/ieee.uvce.cs?igshid=31c9md76rg98" target="_blamk"><span
+              class="fab fa-instagram"></span></a>
+          <a href="https://twitter.com/ieeeuvce?lang=en" target="_blank"><span class="fab fa-twitter"></span></a>
+          <a href="https://in.linkedin.com/in/ieee-uvce-66563332" target="_blank"><span
+              class="fab fa-linkedin"></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="center box">
+      <h2>Contact</h2>
+      <div class="content">
+        <div class="place">
+
+          <a href="https://goo.gl/maps/P43RC7Qphrq" target="_blank">
+            <span class="fas fa-map-marker-alt"></span></a>
+          <span class="text"> UVCE, K R Circle, Bengaluru</span>
+
+        </div>
+        <div class="phone">
+          <a id="call" href="#">
+            <span class="fas fa-phone-alt"></span></a>
+          <span class="text">XYZ</span>
+        </div>
+        <div class="email">
+          <a href="mailto:cs.uvce.ieee@gmail.com " target="_blank">
+            <span class="fas fa-envelope"></span></a>
+          <span class="text">cs.uvce.ieee@gmail.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="right box">
+      <h2>Contact us</h2>
+      <div class="content">
+
+        <form class="m-4" method="POST" action="adminonly.php" onsubmit="disableButton()">
+          <div class="form-group">
+            <label for="inputEmail">Email*</label>
+            <input type="email" class="form-control" id="inputemail" placeholder="Email" name="email"
+              style="background-color:white;" required>
+          </div>
+          <div class="form-group">
+            <label for="inputmessage">Message*</label>
+            <textarea rows="4" cols="200" type="text" class="form-control" id="inputmessage" placeholder="Message"
+              name="message" required></textarea>
+          </div>
+          <br>
+          <button type="submit" name="check" id="itscorrect" class="btn btn-dark"
+            style="background-color:black;">Send</button>
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="bottom">
+    <center>
+      <span class="credit">Created by <a href="http://www.ieeeuvce.in/" target="_blank">IEEE UVCE</a>
+        <span class="far fa-copyright"></span> 2020 - All rights reserved.</span>
+
+    </center>
+  </div>
+</footer>
+<!-- End Footer -->
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+    class="bi bi-arrow-up-short"></i></a>
 
 <!--js files-->
-
- <script src="{% static 'node_modules/jquery/dist/jquery.slim.min.js' %}"></script>
- <script src="{% static 'node_modules/popper.js/dist/umd/popper.min.js' %}"></script>
- <script src="{% static 'node_modules/bootstrap/dist/js/bootstrap.min.js' %}"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script  src="{% static 'js/script.js' %}"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="{% static 'js/script.js' %}"></script>
 <script src="{% static 'vendor/aos/aos.js' %}"></script>
-  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
-  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
-  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
-  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
-  <script src="{% static 'vendor/waypoints/noframework.waypoints.js' %}"></script>
+<!-- <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script> -->
+<!-- <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+<script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'vendor/waypoints/noframework.waypoints.js' %}"></script> -->
 
 
 </html>
-
-
-
-
-
-

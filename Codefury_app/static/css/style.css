@@ -5,8 +5,9 @@
   text-align: center;
   font-size: 40px;
   font-family: Hack, sans-serif;
+  font-weight: bolder;
   text-transform: uppercase;
-  background: linear-gradient(90deg, rgb(28, 16, 83), #fff, rgb(28, 16, 83));
+  background: linear-gradient(90deg,rgb(74, 61, 134) ,#fff , rgb(74, 61, 134));
   letter-spacing: 5px;
   -webkit-background-clip: text;
   background-clip: text;
@@ -59,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #37517e;
+  background: linear-gradient(to bottom right, #2A1B3D, #DB3F87);
 }
 
 #preloader:before {
@@ -67,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #37517e;
+  border: 6px solid #73c5eb;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
