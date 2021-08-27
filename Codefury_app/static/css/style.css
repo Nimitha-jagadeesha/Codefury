@@ -834,31 +834,39 @@ footer{
   padding: 0 2px;
 }
 .left .content .social a span{
-  height: 40px;
-  width: 40px;
+  height: 500px;
+  width: 500px;
   background: #ffff;
-  line-height: 40px;
+  line-height: 100px;
   text-align: center;
   font-size: 18px;
-  border-radius: 5px;
+  border-radius: 3px;
   transition: 0.3s;
+  padding: 3px 3px;
+  color: #151515;
+
 }
 .left .content .social a span:hover{
   background: #0000;
+  color: #0c3c53;
+  
 }
-.center .content .fas{
+.center .content .bi{
   font-size: 1.4375rem;
   background: #ffff;
-  height: 45px;
-  width: 45px;
+  height: 65px;
+  width: 65px;
   line-height: 45px;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 2px;
   transition: 0.3s;
   cursor: pointer;
+  padding: 3px 3px;
+  color: #151515;
 }
-.center .content .fas:hover{
+.center .content .bi:hover{
   background: #0000;
+  color: #0c3c53;
 }
 .center .content .text{
   font-size: 1.0625rem;
