@@ -1,4 +1,5 @@
 {% load static %}
+{% load crispy_forms_tags %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,11 +28,11 @@
   <!--bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <!-- <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet"> -->
   <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
-  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
-  <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
-  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <!-- <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet"> -->
+  <!-- <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet"> -->
 
 </head>
 
@@ -41,7 +42,8 @@
   <header id="header" class="fixed-top ">
     <nav class="navbar navbar-expand-lg navbar-transparent" style="color: #ffff;">
       <a class="navbar-brand" href="#" style="font-size: large;">CODEFURY</a>
-      <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon bi bi-list" style="color: #ffff;"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
@@ -55,7 +57,7 @@
           <a class="nav-link" href="#sponsership">Sponsers</a>
         </div>
         <div class="nav-item">
-         <a class="nav-link" href="#gallery">Gallery</a>
+          <a class="nav-link" href="#gallery">Gallery</a>
         </div>
         <div class="nav-item">
           <a class="nav-link" href="#contact">Contact Us</a>
@@ -65,17 +67,19 @@
   </header>
   <!-- End Header -->
   <!--annoucments-->
-  <div class="ranking" onclick="show_ann()" id="ex" style="z-index: 1;">
+  <div class="ranking" onclick="show_ann()" id="ex" style="z-index:1;">
     <p class="toggle">
       <i class="fa fa-bullhorn " aria-hidden="true" style="font-size:42px; color:#ffff;"></i>
     </p>
+
   </div>
-  <div class="toggle-content" id="example" >
+  <div class="toggle-content" id="example" style="z-index:10;">
     <center style="border-bottom:1px solid white;">Announcements
       <i class="fa fa-window-close"
         style="cursor:pointer;margin-top:-2px;float:right;font-size:32px;color:blue;z-index:200;"
         onclick="hide_ann()"></i>
     </center>
+
 
   </div>
 
@@ -156,19 +160,19 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-6"  style="z-index: -9;">
-          <a href="https://www.youtube.com/results?search_query=slideshow+css+responsive+without+bootstrap"><img class="logos" src="{%static 'img/logo.png' %}" alt=""></a>
+        <div class="col-lg-3 col-md-6 col-sm-6" style="z-index: -9;">
+          <a href="https://www.geeksforgeeks.org/"><img class="logos" src="{%static 'img/logo.png' %}" alt=""></a>
           <p class="s">GeeksForGeeks</p>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-6"  style="z-index: -9;">
+        <div class="col-lg-3 col-md-6 col-sm-6" style="z-index: -9;">
           <a href="https://www.geeksforgeeks.org/"><img class="logos" src="{% static 'img/logo.png' %}" alt=""></a>
           <p class="s">GeeksForGeeks</p>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-6"  style="z-index: -9;">
+        <div class="col-lg-3 col-md-6 col-sm-6" style="z-index: -9;">
           <a href="https://www.geeksforgeeks.org/"><img class="logos" src="{% static 'img/logo.png' %}" alt=""></a>
           <p class="s">GeeksForGeeks</p>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-6"  style="z-index: -9;">
+        <div class="col-lg-3 col-md-6 col-sm-6" style="z-index: -9;">
           <a href="https://www.geeksforgeeks.org/"><img class="logos" src="{% static 'img/logo.png' %}" alt=""></a>
           <p class="s">GeeksForGeeks</p>
         </div>
@@ -224,7 +228,7 @@
   <section id="faq" class="faq section-bg">
     <div class="container" data-aos="fade-up">
 
-      <div class="section-title">
+      <div class="section-title" style="z-index: -9;">
         <h2>Frequently Asked Questions</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
           consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
@@ -351,24 +355,13 @@
     </div>
     <div class="right box">
       <h2>Contact us</h2>
-      <div class="content">
-
-        <form class="m-4" method="POST" action="adminonly.php" onsubmit="disableButton()">
-          <div class="form-group">
-            <label for="inputEmail">Email*</label>
-            <input type="email" class="form-control" id="inputemail" placeholder="Email" name="email"
-              style="background-color:white;" required>
-          </div>
-          <div class="form-group">
-            <label for="inputmessage">Message*</label>
-            <textarea rows="4" cols="200" type="text" class="form-control" id="inputmessage" placeholder="Message"
-              name="message" required></textarea>
-          </div>
-          <br>
-          <button type="submit" name="check" id="itscorrect" class="btn btn-dark"
-            style="background-color:black;">Send</button>
+      <div class="content-section">
+        <form class="m-3" method="POST">
+          <fieldset class="form-group">
+            {{form|crispy}}
+          </fieldset>
+          <button type="submit" class="btn btn-dark" style="background-color:black;">Send</button>
         </form>
-
       </div>
     </div>
 
@@ -397,12 +390,12 @@
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="{% static 'js/script.js' %}"></script>
 <script src="{% static 'vendor/aos/aos.js' %}"></script>
-<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script> 
-<script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
-<script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
-<script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
-<script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
-<script src="{% static 'vendor/waypoints/noframework.waypoints.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<!-- <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script> -->
+<!-- <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script> -->
+<!-- <script src="{% static 'vendor/php-email-form/validate.js' %}"></script> -->
+<!-- <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script> -->
+<!-- <script src="{% static 'vendor/waypoints/noframework.waypoints.js' %}"></script> -->
 
 
 </html>
