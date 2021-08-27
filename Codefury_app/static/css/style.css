@@ -671,9 +671,12 @@ background-position: center center;
 }
 
 .ctitle {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgb(105, 105, 121);
   font-weight: bold;
   line-height: 1.2;
+  color:white;
 }
 
 .des {
