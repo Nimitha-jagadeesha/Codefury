@@ -707,7 +707,7 @@ background-position: center center;
 }
 
 .cbtn:focus {
-  outline: 1px dashed yellow;
+  outline: 1px solid yellow;
   outline-offset: 3px;
 }
 
