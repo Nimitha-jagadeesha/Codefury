@@ -237,4 +237,6 @@ var repeat = function(activeClass){
   repeater();
 }
 repeat();
+var x=1;
+
 
