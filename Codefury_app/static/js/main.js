@@ -237,6 +237,17 @@ var repeat = function(activeClass){
   repeater();
 }
 repeat();
-var x=1;
 
+
+//Announcement section
+function show_ann()
+{
+ document.getElementById("ex").style.display="none";
+    document.getElementById("example").style.display="block";
+}
+function hide_ann()
+{
+ document.getElementById("example").style.display="none";
+    document.getElementById("ex").style.display="block";
+}
 
