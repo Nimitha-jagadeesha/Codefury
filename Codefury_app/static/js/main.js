@@ -211,20 +211,44 @@ function hide_ann()
                 let now = new Date().getTime(),
                     distance = countDown - now;
         
-                document.getElementById("days").innerText = Math.floor(distance / (day)),
+                    var a,b,c,d;
+                   a= Math.floor(distance / (day));
+                   b= Math.floor((distance % (day)) / (hour));
+                   c= Math.floor((distance % (hour)) / (minute));
+                   d=Math.floor((distance % (minute)) / second);
+
+                   if(a<10 && a>=0)
+                        document.getElementById("days").innerText="0"+a;
+                   else
+                        document.getElementById("days").innerText=a;
+
+                    if(b<10 && b>=0)
+                        document.getElementById("hours").innerText="0"+b;
+                   else
+                        document.getElementById("hours").innerText=b;     
+
+                    if(c<10 && c>=0)
+                        document.getElementById("minutes").innerText="0"+c;
+                   else
+                        document.getElementById("minutes").innerText=c;
+
+                    if(d<10 && d>=0)
+                        document.getElementById("seconds").innerText="0"+d;
+                   else
+                        document.getElementById("seconds").innerText=d;
+
+              /*  document.getElementById("days").innerText = Math.floor(distance / (day)),
                   document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
                   document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-                  document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+                  document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second); */
         
                 //do something later when date is reached
                 if (distance < 0) {
-                  let headline = document.getElementById("headline"),
-                      countdown = document.getElementById("countdown"),
-                      content = document.getElementById("content");
-        
-                  headline.innerText = "It's my birthday!";
-                  countdown.style.display = "none";
-                  content.style.display = "block";
+                  
+                  document.getElementById("days").innerHTML="00";
+                  document.getElementById("hours").innerHTML="00";
+                  document.getElementById("minutes").innerHTML="00";
+                  document.getElementById("seconds").innerHTML="00";
         
                   clearInterval(x);
                 }
