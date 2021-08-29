@@ -60,12 +60,12 @@
   </header><!-- End Header -->
  <!-- ======= Announcement Section ======= -->
 
-  <div class="ranking" onclick="show_ann()" id="ex">
+  <div class="ranking" onclick="show_ann()" id="ex" style="z-index: 1000;">
     <p class="toggle">
       <i class="fa fa-bullhorn " aria-hidden="true" style="font-size:52px;color:white;transform: scale(-1, 1)"></i>
     </p>
   </div>
-    <div class="toggle-content" id="example" >
+    <div class="toggle-content" id="example" style="z-index: 1000;">
       <center style="border-bottom:1px solid rgb(35,61,59);">Announcements 
           <i class="fa fa-window-close" style="cursor:pointer;margin-top:-2px;float:right;font-size:32px;color:rgb(35,61,59);z-index:9;" onclick="hide_ann()"></i></center>
       
@@ -334,7 +334,7 @@
           <h2>Contact us</h2>
           <div class="content">
     
-            <form class="m-4" method="POST" action="adminonly.php" onsubmit="disableButton()">
+            <form class="m-4" method="POST">
               <div class="form-group">
                {{form|crispy}}
               </div>
