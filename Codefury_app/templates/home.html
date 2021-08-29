@@ -49,7 +49,7 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#sponser">Sponser</a></li>
+          <li><a class="nav-link scrollto" href="#sponser">Sponsors</a></li>
           <li><a class="nav-link   scrollto" href="#gallery">Gallery</a></li>
           <li><a class="nav-link scrollto" href="#footercontact">Contact</a></li>
         </ul>
@@ -72,7 +72,7 @@
     </div>
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <section id="hero" class="d-flex align-items-center" style="height:100vh;">
     
  
     <div class="container">
@@ -82,39 +82,41 @@
           <h1 class="name">CODEFURY</h1>
           <br><br>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#" class="btn-get-started scrollto">Register Now</a>
+            <a href="#" class="btn-get-started scrollto" id="regbtn" style="margin-top:-4vh">Register Now</a>
           </div>
        
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="{% static 'img/hero-img.png' %}" class="img-fluid animated" alt="">
+          <img src="{% static 'img/hero-img.png' %}" class="img-fluid animated" alt="" height="350" width="400" id="heroimg">
         </div>
-      </div>
+        </div>
+              <!-- Countdown -->
+
+              <div id="timer" data-aos="fade-up">
+                <div class="container col-l ">
+                  <div class="section-title">
+                    <br><br>
+                    <h5 id="timerh5">EVENT STARTS IN</h5>
+                  </div>
+                  <div id="countdown">
+                
+                    <ul id="count_ul">
+                      <li ><span id="days"></span>days</li>
+                      <li><span id="hours"></span>Hours</li>
+                      <li><span id="minutes"></span>Minutes</li>
+                      <li><span id="seconds"></span>Seconds</li>
+                    </ul>
+                  
+                    <br><br><br>
+                  </div>
+                </div>
+              </div>
+      
     </div>
 
   </section><!-- End Hero -->
 
-  <!-- Countdown -->
-
-  <div id="timer">
-    <div class="container">
-      <div class="section-title">
-        <br><br>
-        <h1>EVENT STARTS IN</h1>
-      </div>
-      <div id="countdown">
-    
-        <ul id="count_ul">
-          <li><span id="days"></span>days</li>
-          <li><span id="hours"></span>Hours</li>
-          <li><span id="minutes"></span>Minutes</li>
-          <li><span id="seconds"></span>Seconds</li>
-        </ul>
-      
-        <br><br><br>
-      </div>
-    </div>
-  </div>
+ 
 
 <main id="main">
 
@@ -154,7 +156,7 @@
 
 
      <!-- ======= sponsership Section ======= -->
-     <section id="sponser" class="sponser section-bg">
+     <section id="sponser" class="sponser section-bg" data-aos="fade-up">
       <div class="container">
        
               <div class="section-title">
@@ -227,7 +229,7 @@
 
         <div class="section-title">
           <h1>Frequently Asked Questions</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p style="text-align:center;padding:0 3% 5%;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="faq-list">
