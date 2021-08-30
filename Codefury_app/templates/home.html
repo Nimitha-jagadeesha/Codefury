@@ -13,11 +13,14 @@
 
   <!-- Favicons -->
   <link href="{% static 'img/favicon.webp' %}" rel="icon">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
- <!--Font awessome icon-->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <!--Font awessome icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Vendor CSS Files -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -42,7 +45,7 @@
     <div class="container d-flex align-items-center">
 
       <h1 class="logo me-auto"><a href="#">CODEFURY</a></h1>
-     
+
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
@@ -58,67 +61,72 @@
 
     </div>
   </header><!-- End Header -->
- <!-- ======= Announcement Section ======= -->
+  <!-- ======= Announcement Section ======= -->
 
   <div class="ranking" onclick="show_ann()" id="ex" style="z-index: 1;">
     <p class="toggle">
       <i class="fa fa-bullhorn " aria-hidden="true" style="font-size:52px;color:white;transform: scale(-1, 1)"></i>
     </p>
   </div>
-    <div class="toggle-content" id="example" style="z-index: 1;">
-      <center style="border-bottom:1px solid rgb(35,61,59);">Announcements 
-          <i class="fa fa-window-close" style="cursor:pointer;margin-top:-2px;float:right;font-size:32px;color:rgb(35,61,59);z-index:9;" onclick="hide_ann()"></i></center>
-      
-    </div>
+  <div class="toggle-content" id="example" style="z-index: 1;">
+    <center style="border-bottom:1px solid rgb(35,61,59);">Announcements
+      <i class="fa fa-window-close"
+        style="cursor:pointer;margin-top:-2px;float:right;font-size:32px;color:rgb(35,61,59);z-index:9;"
+        onclick="hide_ann()"></i>
+    </center>
+
+  </div>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
-    
- 
+
+
     <div class="container">
       <div class="row">
-        <div class="col-md-6 d-flex flex-column justify-content-center pt-4 pt-md-0 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-md-6 d-flex flex-column justify-content-center pt-4 pt-md-0 order-2 order-md-1"
+          data-aos="fade-up" data-aos-delay="200">
           <h2 class="name">IEEE UVCE Presents</h2>
           <h1 class="name">CODEFURY</h1>
           <br><br>
-          <div class="d-flex justify-content-center justify-content-lg-start">
+          <div class="d-flex justify-content-center justify-content-lg-start ">
             <a href="#" class="btn-get-started scrollto" id="regbtn" style="margin-top:-4vh">Register Now</a>
           </div>
-       
+
         </div>
         <div class="col-md-6 order-1 order-md-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="{% static 'img/hero-img.png' %}" class="img-fluid animated" alt="" height="350" width="400" id="heroimg">
+          <img src="{% static 'img/hero-img.png' %}" class="img-fluid animated" alt="" height="280" width="320"
+            id="heroimg">
         </div>
-        </div>
-              <!-- Countdown -->
+      </div>
+      <!-- Countdown -->
 
-              <div id="timer" data-aos="fade-up">
-                <div class="container col-l ">
-                  <div class="section-title">
-                    <br><br>
-                    <h5 id="timerh5">EVENT STARTS IN</h5>
-                  </div>
-                  <div id="countdown">
-                
-                    <ul id="count_ul">
-                      <li ><span id="days"></span>days</li>
-                      <li><span id="hours"></span>Hours</li>
-                      <li><span id="minutes"></span>Minutes</li>
-                      <li><span id="seconds"></span>Seconds</li>
-                    </ul>
-                  
-                    <br><br><br>
-                  </div>
-                </div>
-              </div>
-      
+      <div id="timer" data-aos="fade-up">
+        <div class="container col-l ">
+          <div class="section-title">
+            <br><br>
+            <h5 id="timerh5">EVENT STARTS IN</h5>
+          </div>
+          <div id="countdown">
+
+            <ul id="count_ul">
+              <li><span id="days"></span>days</li>
+              <li><span id="hours"></span>Hours</li>
+              <li><span id="minutes"></span>Minutes</li>
+              <li><span id="seconds"></span>Seconds</li>
+            </ul>
+
+            <br><br><br>
+          </div>
+        </div>
+      </div>
+
     </div>
 
   </section><!-- End Hero -->
 
- 
 
-<main id="main">
+
+  <main id="main">
 
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about" style="z-index:-9;">
@@ -131,7 +139,8 @@
         <div class="row content">
           <div class="col-lg-6">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
               magna aliqua.
             </p>
             <ul>
@@ -142,7 +151,8 @@
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate
               velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
               culpa qui officia deserunt mollit anim id est laborum.
             </p>
@@ -155,42 +165,42 @@
 
 
 
-     <!-- ======= sponsership Section ======= -->
-     <section id="sponser" class="sponser section-bg" data-aos="fade-up">
+    <!-- ======= sponsership Section ======= -->
+    <section id="sponser" class="sponser section-bg" data-aos="fade-up">
       <div class="container">
-       
-              <div class="section-title">
-                <h1>OUR SPONSORS</h1>
-                <div class="flexrow">
-                <div class="card">
-                  <div class="ccontent">
-                      <p class="ctitle">GeekforGeeks</p><br>
-                      <p class="des">Small description within 1 or 2 sentences.</p>
-                      <a href="https://www.geeksforgeeks.org/" target="_blank"><button class="cbtn">Visit Website</button></a>
-                  </div>
+
+        <div class="section-title">
+          <h1>OUR SPONSORS</h1>
+          <div class="flexrow">
+            <div class="card">
+              <div class="ccontent">
+                <p class="ctitle">GeekforGeeks</p><br>
+                <p class="des">Small description within 1 or 2 sentences.</p>
+                <a href="https://www.geeksforgeeks.org/" target="_blank"><button class="cbtn">Visit Website</button></a>
               </div>
-              <div class="card">
-                  <div class="ccontent">
-                      <p class="ctitle">Dell</p><br>
-                      <p class="des">Small description within 1 or 2 sentences</p>
-                      <a href="https://www.dell.com/en-in" target="_blank"><button class="cbtn">Visit Website</button></a>
-                  </div>
+            </div>
+            <div class="card">
+              <div class="ccontent">
+                <p class="ctitle">Dell</p><br>
+                <p class="des">Small description within 1 or 2 sentences</p>
+                <a href="https://www.dell.com/en-in" target="_blank"><button class="cbtn">Visit Website</button></a>
               </div>
-              <div class="card">
-                  <div class="ccontent">
-                      <p class="ctitle">Rakuten</p><br>
-                      <p class="des">Small description within 1 or 2 sentences</p>
-                      <a href="https://corp.rakuten.co.in/" target="_blank"><button class="cbtn">Visit Website</button></a>
-                  </div>
+            </div>
+            <div class="card">
+              <div class="ccontent">
+                <p class="ctitle">Rakuten</p><br>
+                <p class="des">Small description within 1 or 2 sentences</p>
+                <a href="https://corp.rakuten.co.in/" target="_blank"><button class="cbtn">Visit Website</button></a>
               </div>
-              </div>
+            </div>
+          </div>
         </div>
 
       </div>
       </div>
     </section><!-- End Cliens Section -->
 
-   <!-- ======= Gallery Section ======= -->
+    <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="portfolio">
       <div class="container" data-aos="fade-up">
 
@@ -217,75 +227,44 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-         
-  
+
+
         </div>
       </div>
     </section><!-- End Portfolio Section--->
-    
+
     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h1>Frequently Asked Questions</h2>
-          <p style="text-align:center;padding:0 3% 5%;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <p style="text-align:center;padding:0 3% 5%;">Magnam dolores commodi suscipit. Necessitatibus eius
+              consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et
+              nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="faq-list">
           <ul>
+            {% for faq in faqs %}
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
+                data-bs-target="#faq-list-1">{{faq.question}}? <i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                 <p>
-                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                  {{faq.answer}}
                 </p>
               </div>
             </li>
-
-            <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="500">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
-                </p>
-              </div>
-            </li>
-
+            {% endfor %}
           </ul>
         </div>
 
       </div>
     </section><!-- End Frequently Asked Questions Section -->
 
-</main><!-- End #main -->
+  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footercontact">
@@ -294,12 +273,16 @@
         <div class="left box">
           <h2>About us</h2>
           <div class="content">
-            <p>The IEEE Student Branch of UVCE has been interminably striving to hoist the student community and empower its
-              members. The organization's commitment to enhancing and upgrading the core knowledge base of the students to
-              the industry standards is reflected in the host of activities organized by it throughout the year. Rekindled
-              in 2001, the student branch has come to be one of the most recognized student branches across the Region 10 of
+            <p>The IEEE Student Branch of UVCE has been interminably striving to hoist the student community and empower
+              its
+              members. The organization's commitment to enhancing and upgrading the core knowledge base of the students
+              to
+              the industry standards is reflected in the host of activities organized by it throughout the year.
+              Rekindled
+              in 2001, the student branch has come to be one of the most recognized student branches across the Region
+              10 of
               IEEE.</p>
-    
+
             <div class="social m-4 text-center">
               <a href="https://www.facebook.com/Ieee.uvce.cs/" target="_blank"><span class="bi bi-facebook"></span></a>
               <a href="https://instagram.com/ieee.uvce.cs?igshid=31c9md76rg98" target="_blamk"><span
@@ -314,11 +297,11 @@
           <h2>Contact</h2>
           <div class="content">
             <div class="place">
-    
+
               <a href="https://goo.gl/maps/P43RC7Qphrq" target="_blank">
                 <span class="bi bi-geo-alt-fill"></span></a>
               <span class="text"> UVCE, K R Circle, Bengaluru</span>
-    
+
             </div>
             <div class="phone">
               <a id="call" href="#">
@@ -335,37 +318,38 @@
         <div class="right box">
           <h2>Contact us</h2>
           <div class="content">
-    
+
             <form class="m-4" method="POST">
               <div class="form-group">
-               {{form|crispy}}
+                {{form|crispy}}
               </div>
               <br>
               <button type="submit" name="check" id="itscorrect" class="btn btn-dark"
                 style="background-color:black;">Send</button>
             </form>
-    
+
           </div>
         </div>
-    
+
       </div>
-    
+
       <div class="bottom">
         <center>
           <span class="credit">Created by <a href="http://www.ieeeuvce.in/" target="_blank">IEEE UVCE</a>
             <span class="far fa-copyright"></span> 2021 - All rights reserved.</span>
-    
+
         </center>
       </div>
-    </div>  
-       
+    </div>
+
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
- 
+
   <script src="{% static 'vendor/aos/aos.js' %}"></script>
   <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
   <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
@@ -373,9 +357,15 @@
   <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
   <script src="{% static 'vendor/waypoints/noframework.waypoints.js' %}"></script>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
   <!-- Template Main JS File -->
   <script src="{% static 'js/main.js' %}"></script>
