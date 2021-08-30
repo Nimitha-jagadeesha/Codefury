@@ -542,9 +542,6 @@ h6 {
   color: #fff;
   background: rgb(35, 61, 59);
 }
-#heroimg {
-  margin-left: 10vh;
-}
 #hero .btn-get-started:hover {
   background: rgb(85, 139, 137);
 }
