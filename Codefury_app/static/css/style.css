@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Audiowide);
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -396,12 +400,12 @@ h6 {
   width: 60px;
   font-size: 25px;
   padding: 8px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   margin-top: 7em;
   float: right;
   right: 0;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
+  /* border-top-right-radius: 0px; */
+  /* border-bottom-right-radius: 0px; */
   cursor: pointer;
   -webkit-animation: disapear 1s;
   -webkit-animation-fill-mode: forwards;
