@@ -192,11 +192,13 @@ function show_ann()
        {
         document.getElementById("ex").style.display="none";
            document.getElementById("example").style.display="block";
+           document.getElementById("navbarhead").style.opacity=0;
        }
        function hide_ann()
        {
         document.getElementById("example").style.display="none";
            document.getElementById("ex").style.display="block";
+           document.getElementById("navbarhead").style.opacity=1;
        }
 
       /*

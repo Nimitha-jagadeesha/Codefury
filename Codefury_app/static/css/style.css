@@ -419,13 +419,12 @@ h6 {
 }
 .toggle-content {
   display: none;
-  height: auto;
-  width:50vw;
+  width:100vw;
+  height:100vh;
+  background-color:black;
   border-radius: 10px;
-  margin-top: 11rem;
   opacity: 1;
   position: fixed;
-  right: 0;
   -webkit-animation: disapear2 1s;
   -webkit-animation-fill-mode: forwards;
   animation: disapear2 1s;
@@ -453,18 +452,7 @@ h6 {
     transform: translateX(0%);
   }
 }
-@media screen and (max-width: 480px) {
-  .toggle-content {
-    width: 200px;
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 300px) {
-  .toggle-content {
-    width: 70vw;
-    font-size: 16px;
-  }
-}
+
 .cmd
 {
     background-color:black;
@@ -473,10 +461,10 @@ h6 {
    border-radius: 2%;
 }
 .cmd button{
+  margin-top:20px;
     height: 20px;
     width:20px;
     border-radius:50%;
-    margin-top:10px;
     margin-bottom: 30px;
 }
 .bred
@@ -497,7 +485,7 @@ h6 {
 .cmd p{
     color: lime; 
     font-family: "Courier";
-    font-size: 1.8vw;
+    font-size: 25px;
     margin: 10px 0 0 10px;
     white-space: nowrap;
     overflow: hidden;
@@ -521,34 +509,16 @@ h6 {
   }
   @media screen and (max-width:650px)
   {
-      .cmd{
-          width:75vw;
-      }
      .cmd p
       {
-          font-size:2.5vw;
+          font-size:25px;
       }
       .cmd button{
           height:15px;
           width:15px;
       }
   }
-  @media screen and (max-width:480px)
-  {
-      .cmd{
-          width:87vw;
-          height: 150px;
-      }
-      p
-      {
-          font-size:3vw;
-      }
-      .cmd button{
-          height:15px;
-          width:15px;
-          margin-left:10px;
-      }
-  }
+ 
 
 /*--------------------------------------------------------------
 # Social media handles Section

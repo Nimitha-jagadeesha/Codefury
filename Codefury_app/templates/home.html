@@ -41,10 +41,10 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center">
+  <header id="header" class="fixed-top " style="z-index:1;">
+    <div class="container d-flex align-items-center" id="navbarhead">
 
-      <h1 class="logo me-auto"><a href="#">CODEFURY</a></h1>
+      <h1 class="logo me-auto" ><a href="#">CODEFURY</a></h1>
 
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -68,12 +68,14 @@
       <i class="fa fa-bullhorn " aria-hidden="true" style="font-size:45px;color:white;transform: scale(-1, 1)"></i>
     </p>
   </div>
-  <div class="toggle-content" id="example" style="z-index: 1;">
+  <div class="toggle-content" id="example" style="z-index: 100;">
     <div class="cmd">
+     
       <button class="bred" disabled></button>
       <button class="byellow" disabled></button>
       <button class="bgreen" disabled></button>
-      <i class="fa fa-close" style="color:red;float:right;font-size:25px;cursor:pointer;" onclick="hide_ann()"></i>
+      <i class="fa fa-close" style="color:red;font-size:35px;cursor:pointer;z-index:100;float:right;margin-right:20px" onclick="hide_ann()"></i>
+     
   <p>Announcemets<br><br>
 No announcements yet<br><br>
 Stay tuned<span>_</span></p> </div>
