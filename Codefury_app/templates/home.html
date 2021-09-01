@@ -65,18 +65,38 @@
 
   <div class="ranking" onclick="show_ann()" id="ex" style="z-index: 1;">
     <p class="toggle">
-      <i class="fa fa-bullhorn " aria-hidden="true" style="font-size:52px;color:white;transform: scale(-1, 1)"></i>
+      <i class="fa fa-bullhorn " aria-hidden="true" style="font-size:45px;color:white;transform: scale(-1, 1)"></i>
     </p>
   </div>
   <div class="toggle-content" id="example" style="z-index: 1;">
-    <center style="border-bottom:1px solid rgb(35,61,59);">Announcements
-      <i class="fa fa-window-close"
-        style="cursor:pointer;margin-top:-2px;float:right;font-size:32px;color:rgb(35,61,59);z-index:9;"
-        onclick="hide_ann()"></i>
-    </center>
+    <div class="cmd">
+      <button class="bred" disabled></button>
+      <button class="byellow" disabled></button>
+      <button class="bgreen" disabled></button>
+      <i class="fa fa-close" style="color:red;float:right;font-size:25px;cursor:pointer;" onclick="hide_ann()"></i>
+  <p>Announcemets<br><br>
+No announcements yet<br><br>
+Stay tuned<span>_</span></p> </div>
 
   </div>
+<!-- ========= Social media handles =======-->
 
+
+
+<div id="circularMenu1" class="circular-menu circular-menu-left" style="z-index: 1;">
+
+  <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
+    <i class="fa fa-link"></i>
+  </a>
+
+  <menu class="items-wrapper">
+    <a href="#" class="menu-item fa fa-instagram"></a>
+    <a href="#" class="menu-item fa fa-linkedin"></a>
+    <a href="#" class="menu-item fa fa-facebook"></a>
+    <a href="#" class="menu-item fa fa-twitter"></a>
+  </menu>
+
+</div>
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
 
