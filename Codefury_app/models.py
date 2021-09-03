@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Announcment(models.Model):
-    title = models.CharField(max_length=300, blank=True)
+    title = models.TextField(max_length=300, blank=True)
     date = models.DateField(auto_now=True)
     time = models.TimeField(auto_now=True)
 
