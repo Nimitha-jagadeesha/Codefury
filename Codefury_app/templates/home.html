@@ -22,15 +22,22 @@
   <!--Font awessome icon-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Vendor CSS Files -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
-  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
-  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
-  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
-  <link href="{% static 'vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
-  <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
-  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- AOSlibrary  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet"> -->
+  <!-- <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet"> -->
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet"> -->
+  <!-- box icons -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <!-- <link href="{% static 'vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet"> -->
+  <!-- <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet"> -->
+  <!-- <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet"> -->
 
   <!-- Template Main CSS File -->
   <link href="{% static 'css/style.css' %}" rel="stylesheet">
@@ -44,7 +51,7 @@
   <header id="header" class="fixed-top " style="z-index:2;">
     <div class="container d-flex align-items-center" id="navbarhead">
 
-      <h1 class="logo me-auto" ><a href="#">CODEFURY</a></h1>
+      <h1 class="logo me-auto"><a href="#">CODEFURY</a></h1>
 
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -53,7 +60,7 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#sponser">Sponsors</a></li>
-          <li><a class="nav-link   scrollto" href="#gallery">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
           <li><a class="nav-link scrollto" href="#footercontact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -70,35 +77,43 @@
   </div>
   <div class="toggle-content" id="example" style="z-index: 100;">
     <div class="cmd">
-     
+
       <button class="bred" disabled></button>
       <button class="byellow" disabled></button>
       <button class="bgreen" disabled></button>
-      <i class="fa fa-close" style="color:red;font-size:35px;cursor:pointer;z-index:100;float:right;margin-right:20px" onclick="hide_ann()"></i>
-     
-  <p>C:\Admin\Codefury4.O\Announcements><br><br>
-No announcements yet<br><br>
-Stay tuned<span>_</span></p> </div>
+      <i class="fa fa-close" style="color:red;font-size:35px;cursor:pointer;z-index:100;float:right;margin-right:20px"
+        onclick="hide_ann()"></i>
+      <p style="overflow:visible">Announcements<br><br>
+        {% if announcements %}
+        {% for an in announcements %}
+        {{an.date}}\{{an.time}}> {{an.title}}
+        {% endfor %}
+        {% else %}
+        No announcements yet<br><br>
+        Stay tuned<span>_</span></p>
+      {% endif %}
+
+    </div>
 
   </div>
-<!-- ========= Social media handles =======-->
+  <!-- ========= Social media handles =======-->
 
 
 
-<div id="circularMenu1" class="circular-menu circular-menu-left" style="z-index: 1;color: white;">
+  <div id="circularMenu1" class="circular-menu circular-menu-left" style="z-index: 1;color: white;">
 
-  <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
-    <i class="fa fa-link"></i>
-  </a>
+    <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
+      <i class="fa fa-link"></i>
+    </a>
 
-  <menu class="items-wrapper">
-    <a href="#" class="menu-item fa fa-instagram"></a>
-    <a href="#" class="menu-item fa fa-linkedin"></a>
-    <a href="#" class="menu-item fa fa-facebook"></a>
-    <a href="#" class="menu-item fa fa-twitter"></a>
-  </menu>
+    <menu class="items-wrapper">
+      <a href="#" class="menu-item fa fa-instagram"></a>
+      <a href="#" class="menu-item fa fa-linkedin"></a>
+      <a href="#" class="menu-item fa fa-facebook"></a>
+      <a href="#" class="menu-item fa fa-twitter"></a>
+    </menu>
 
-</div>
+  </div>
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
 
@@ -113,18 +128,18 @@ Stay tuned<span>_</span></p> </div>
           <div class="d-flex justify-content-center justify-content-lg-start ">
             <a href="#" class="btn-get-started scrollto" id="regbtn" style="margin-top:-4vh">Register Now</a>
           </div>
-         
+
         </div>
         <div class="col-md-6 order-1 order-md-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="{% static 'img/hero-img.png' %}" class="img-fluid animated" alt="" style="display: block; margin-left: auto;margin-right: auto; width: 70%;"
-            id="heroimg">
+          <img src="{% static 'img/hero-img.png' %}" class="img-fluid animated" alt=""
+            style="display: block; margin-left: auto;margin-right: auto; width: 70%;" id="heroimg">
         </div>
       </div>
       <!-- Countdown -->
-      
-     
-      
-     
+
+
+
+
       <div id="timer" data-aos="fade-up">
         <div class="container col-l ">
           <div class="section-title">
@@ -169,9 +184,9 @@ Stay tuned<span>_</span></p> </div>
               magna aliqua.
             </p>
             <ul>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              <li><i class="bi bi-arrow-right"></i></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              <li><i class="bi bi-arrow-right"></i></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+              <li><i class="bi bi-arrow-right"></i></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
             </ul>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
@@ -231,7 +246,7 @@ Stay tuned<span>_</span></p> </div>
 
         <div class="section-title">
           <h1>Gallery</h1>
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="{% static 'img/1.jpg' %}" alt="First slide">
@@ -243,14 +258,16 @@ Stay tuned<span>_</span></p> </div>
                 <img class="d-block w-100" src="{% static 'img/1.jpg' %}" alt="Third slide">
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
 
 
@@ -325,18 +342,18 @@ Stay tuned<span>_</span></p> </div>
 
               <a href="https://goo.gl/maps/P43RC7Qphrq" target="_blank" style="color: white;">
                 <span class="bi bi-geo-alt-fill"></span>
-              <span class="text"> UVCE, K R Circle, Bengaluru</span></a>
+                <span class="text"> UVCE, K R Circle, Bengaluru</span></a>
 
             </div>
             <div class="phone">
               <a id="call" href="tel:123456789" style="color: white;">
                 <span class="bi bi-telephone-fill"></span>
-              <span class="text">XYZ</span></a>
+                <span class="text">XYZ</span></a>
             </div>
             <div class="email">
               <a href="mailto:cs.uvce.ieee@gmail.com " target="_blank" style="color: white;">
                 <span class="bi bi-envelope-fill"></span>
-              <span class="text">cs.uvce.ieee@gmail.com</span></a>
+                <span class="text">cs.uvce.ieee@gmail.com</span></a>
             </div>
           </div>
         </div>
@@ -375,22 +392,32 @@ Stay tuned<span>_</span></p> </div>
 
   <!-- Vendor JS Files -->
 
-  <script src="{% static 'vendor/aos/aos.js' %}"></script>
-  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
-  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
-  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
-  <script src="{% static 'vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <!-- <script src="{% static 'vendor/aos/aos.js' %}"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script> -->
+  <!-- <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script> -->
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <!-- <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script> -->
+  <!-- <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script> -->
+  <!-- <script src="{% static 'vendor/waypoints/noframework.waypoints.js' %}"></script> -->
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
 
   <!-- Template Main JS File -->
   <script src="{% static 'js/main.js' %}"></script>
