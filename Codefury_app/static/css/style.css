@@ -390,7 +390,6 @@ h6 {
 .ranking {
   list-style-type: none;
   margin-bottom: 1em;
-  background-color: rgb(35, 61, 59);
   position: fixed;
   height: 60px;
   width: 60px;
@@ -399,7 +398,7 @@ h6 {
   /* border-radius: 10px; */
   margin-top: 7em;
   float: right;
-  right: 0;
+  right: 10px;
   /* border-top-right-radius: 0px; */
   /* border-bottom-right-radius: 0px; */
   cursor: pointer;
@@ -413,6 +412,11 @@ h6 {
   color: white;
   margin-top: 0px;
 }
+.toggle img{
+  width:60px;
+  height:60px;
+  transform: scale(-1, 1);
+}
 .toggle-content {
   display: none;
   width: 100vw;
@@ -421,6 +425,7 @@ h6 {
   border-radius: 10px;
   opacity: 1;
   position: fixed;
+  overflow-y: scroll;
   -webkit-animation: disapear2 1s;
   -webkit-animation-fill-mode: forwards;
   animation: disapear2 1s;
@@ -456,9 +461,10 @@ h6 {
   border-radius: 2%;
 }
 .cmd button {
-  margin-top: 20px;
-  height: 20px;
-  width: 20px;
+  margin-top: 25px;
+  height: 25px;
+  width: 25px;
+  outline:none;
   border-radius: 50%;
   margin-bottom: 30px;
 }
@@ -479,21 +485,13 @@ h6 {
   font-family: "Courier";
   font-size: 25px;
   margin: 10px 0 0 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 30em;
-  animation: type 4s steps(60, end);
+
 }
 
 .cmd span {
   animation: blink 1s infinite;
 }
 
-@keyframes type {
-  from {
-    width: 0;
-  }
-}
 
 @keyframes blink {
   to {
@@ -503,10 +501,6 @@ h6 {
 @media screen and (max-width: 650px) {
   .cmd p {
     font-size: 25px;
-  }
-  .cmd button {
-    height: 15px;
-    width: 15px;
   }
 }
 
@@ -690,7 +684,64 @@ h6 {
   line-height: 56px;
   color: #fff;
   font-family: "Audiowide", Helvetica;
+  animation: glitch 1s linear infinite;
 }
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+
+#glichh:before,
+#glichh:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+#glichh:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+#glichh:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
+
 
 #hero h2 {
   color: rgba(255, 255, 255, 0.6);

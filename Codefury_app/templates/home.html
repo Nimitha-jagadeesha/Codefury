@@ -72,7 +72,7 @@
 
   <div class="ranking" onclick="show_ann()" id="ex" style="z-index: 1;">
     <p class="toggle">
-      <i class="fa fa-bullhorn " aria-hidden="true" style="font-size:45px;color:white;transform: scale(-1, 1)"></i>
+      <img src="{% static 'img/ann.svg' %}" aria-hidden="true"></i>
     </p>
   </div>
   <div class="toggle-content" id="example" style="z-index: 100;">
@@ -81,12 +81,13 @@
       <button class="bred" disabled></button>
       <button class="byellow" disabled></button>
       <button class="bgreen" disabled></button>
-      <i class="fa fa-close" style="color:red;font-size:35px;cursor:pointer;z-index:100;float:right;margin-right:20px"
+      <i class="fa fa-close" style="color:red;font-size:35px;cursor:pointer;z-index:100;float:right;"
         onclick="hide_ann()"></i>
       <p style="overflow:visible">Announcements<br><br>
         {% if announcements %}
         {% for an in announcements %}
         {{an.date}}\{{an.time}}> {{an.title}}
+        <br><br>
         {% endfor %}
         {% else %}
         No announcements yet<br><br>
@@ -123,7 +124,7 @@
         <div class="col-md-6 d-flex flex-column justify-content-center pt-4 pt-md-0 order-2 order-md-1"
           data-aos="fade-up" data-aos-delay="200">
           <h2 class="name">IEEE UVCE Presents</h2>
-          <h1 class="name">CODEFURY</h1>
+          <h1 class="name" id="glitchh">CODEFURY</h1>
           <br><br>
           <div class="d-flex justify-content-center justify-content-lg-start ">
             <a href="#" class="btn-get-started scrollto" id="regbtn" style="margin-top:-4vh">Register Now</a>
@@ -324,15 +325,6 @@
               in 2001, the student branch has come to be one of the most recognized student branches across the Region
               10 of
               IEEE.</p>
-
-            <div class="social m-4 text-center">
-              <a href="https://www.facebook.com/Ieee.uvce.cs/" target="_blank"><span class="bi bi-facebook"></span></a>
-              <a href="https://instagram.com/ieee.uvce.cs?igshid=31c9md76rg98" target="_blamk"><span
-                  class="bi bi-instagram"></span></a>
-              <a href="https://twitter.com/ieeeuvce?lang=en" target="_blank"><span class="bi bi-twitter"></span></a>
-              <a href="https://in.linkedin.com/in/ieee-uvce-66563332" target="_blank"><span
-                  class="bi bi-linkedin"></span></a>
-            </div>
           </div>
         </div>
         <div class="center box">
