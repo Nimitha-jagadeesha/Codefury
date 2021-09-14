@@ -293,7 +293,7 @@
                   class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-{{faq.id}}" class="collapse show" data-bs-parent=".faq-list">
                 <p>
-                  {{faq.answer}}
+                  {{faq.answer | safe | linebreaks }}
                 </p>
               </div>
             </li>
