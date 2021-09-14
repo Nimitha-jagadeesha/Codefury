@@ -1192,19 +1192,7 @@ section {
 {
   background-color:white;
 }
-.iframevideos
-{
-  display:flex;
-  justify-content: space-between;
-}
-@media screen and (max-width: 600px)
-{
-  .iframevideos
-{
-  display:flex;
-  flex-direction: column;
-}
-}
+
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions
