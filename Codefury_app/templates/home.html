@@ -30,7 +30,7 @@
 
   <!-- bootstrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <!-- box icons -->
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
@@ -38,6 +38,19 @@
   <!-- Template Main CSS File -->
   <link href="{% static 'css/style.css' %}" rel="stylesheet">
 
+
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
 </head>
 
@@ -58,7 +71,7 @@
           <li><a class="nav-link scrollto" href="#sponser">Sponsors</a></li>
           <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
           <li><a class="nav-link scrollto" href="#pastwinners">Past winners</a></li>
-          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="#scrollofhonour">Scroll of honour</a></li>
           <li><a class="nav-link scrollto" href="#footercontact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -179,7 +192,7 @@
         </div>
 
         <div class="row content">
-          <div class="col-lg-6">
+          <div class="col-lg-6" >
             <p>
               CodeFury is IEEE UVCE Computer Society's Annual National Level Hackathon.
               Our vision is to conduct Hackathons every year to help solve some of the major problems faced by society
@@ -245,13 +258,22 @@
           <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="{% static 'img/1.jpg' %}" alt="First slide">
+                <img class="d-block w-100" src="{% static 'img/1.webp' %}" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="{% static 'img/3.jpg' %}" alt="Second slide">
+                <img class="d-block w-100" src="{% static 'img/2.webp' %}" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="{% static 'img/1.jpg' %}" alt="Third slide">
+                <img class="d-block w-100" src="{% static 'img/3.webp' %}" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="{% static 'img/4.webp' %}" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="{% static 'img/5.webp' %}" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="{% static 'img/6.webp' %}" alt="Second slide">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -286,6 +308,258 @@
           </div>
         </div>
       </div>
+    </section>
+    <!-- ======= Scroll of Honour Section ======= -->
+    <section class="scroll" id="Scrollofhonour">
+
+      <div class="row">
+        <div class="section-title">
+          <h1>Scroll of Honour</h1>
+        </div>
+        <div class="pricing-column col-lg-3 col-md-6 col-md-12">
+          <div class="card">
+  
+            <div class="card-header">
+              <h4 style="text-align: center;">Team Insignia </h4>
+            </div>
+  
+            <h5 style="text-align: center;">Velammal Engineering College</h5><br>
+            <h5 style="text-align: center;">Winners <br> App Development</h5><br>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+              Show more
+            </button>
+  
+            <!-- Modal -->
+            <div class="modal fade " id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Team Insignia</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h4>Technology Stacks Used:</h4>
+                    <ul>
+                      <li>Android-Java</li>
+                      <li>Firebase</li>
+                      <li>Python</li>
+                      <li>JS</li>
+                      <li>HTML</li>
+                      <li>XHTTP Lib</li>
+                      <li>UX design with adobe XD</li>
+                    </ul>
+                    <br>
+                    <h4> Application Highlights:</h4>
+                    <ul>
+                      <li><p>Our app features a Geolocation based  sorting parameter for employees to find a nearby workzone.</p></li>
+                      <li><p>The application also has Voice based Output to translate the contents of the app from other languages to the regional language.</p></li>
+                      <li><p>Our App utilizes a symmetric AES encryption atop of Googles Standard Cipher to improve safety measures as we collect Aadhar card details of our users.</p></li>
+                      <li><p>Our app not only focuses on getting the uncategorized daily wage workers a job to go by we also focus towards a sustainable earning by imparting knowledge on various other fields such as Affiliate Marketing,  Digital Marketing, Artisan works, Dyeing, tailoring etc.</p></li>
+                      <li><p>We also provide notifications for both Employee and Employer app depending upon the need.</p></li>
+                      <li><p>Live chat with customer care. </p></li>
+                      <br>
+                      <h6><a href="https://drive.google.com/drive/folders/159En3Zt2IFA5bSLrkH2MAA-lTAZr55Mr?usp=sharing" target="_blank">Project link</a></h6>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="pricing-column col-lg-3 col-md-6 col-md-12">
+          <div class="card">
+  
+            <div class="card-header">
+              <h4 style="text-align: center;">Team Cache In </h4>
+            </div>
+  
+            <h5 style="text-align: center;">Ramaiah Institute Of Technology</h5><br>
+            <h5 style="text-align: center;">Runners <br> App Development</h5><br>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+              Show more
+            </button>
+  
+            <!-- Modal -->
+            <div class="modal fade " id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Team Cache In</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h4>
+                      Key Features:
+                     </h4> 
+                     <ul>
+                       <li><p>Jobs as per the employee and employer interest.
+                       </p></li>
+                       <li><p>Automatic transfer of job application to similar employers on expiration of the contract .
+                       </p></li>
+                       <li><p>Communicate with your potential employers through Direct Messaging within the app.
+                       </p></li>
+                       <li><p>Sort job recommendations based on your skills and interests.
+                       </p></li>
+                       <li><p>A one-of-a-kind Map view to Job Openings around you.
+                       </p></li>
+                       <li><p>Multi language support with Hindi and English and potential for more.
+                       </p></li>
+                       <li><p>Resume-builder to build a professional work image easily.
+                       </p></li>
+                     </ul><br><br>
+                     <h4> Application Highlights:</h4>
+                     <ul>
+                       <li><p>Through Nowkri, a company/employer can make sure the person getting laid off is not left on the streets for a job again. The employer can recommend or sign him/her up for a pre-contract with another company, interested to sign him/her, a few months prior to the contract termination is done. 
+                       </p></li>
+                       <li><p>We mainly target Unorganised Labour sector as job safety is not very certain for them. 
+                         Therefore we plan to ensure them another job before they get laid off.
+                         </p></li>
+                       <br>
+                       <h6><a href="https://drive.google.com/drive/folders/1IZhScMG6RUXlZUnBUUvB328zE7tQ1pGU?usp=sharing" target="_blank">Project link</a></h6>
+                     </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="pricing-column col-lg-3 col-md-6 col-md-12">
+          <div class="card">
+  
+            <div class="card-header">
+              <h4 style="text-align: center;">Team Alberbolt </h4>
+            </div>
+  
+            <h5 style="text-align: center;">University Visvesvaraya College Of Engineering</h5><br>
+            <h5 style="text-align: center;">Winners <br> Web Development</h5><br>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+              Show more
+            </button>
+  
+            <!-- Modal -->
+            <div class="modal fade " id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Team Alberbolt</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h4>Key Features</h4>
+            <ul>
+              <li><p>Winter is coming and there is an urgent need for more sweaters, gloves, mufflers, socks, monkey caps, etc. The people who have been laid off by textile and clothing industries do have knowledge about making this kind of winter wear and also there are women with a sewing machine in their houses who can make this kind of winter wear. So we are made a website where the people who can make these winter wear have to register themselves and they have to tell us about their district and address..</p></li>
+                <li><p>We have made a page where the person who wants to order can sign up and login and then order the stuff that he wants. The orders are taken up by winter wear makers of the same district and we have made sure that every tailor in the district gets an equal share. When we cannot divide equally, then the person who can finish the work faster gets more orders.</p>                  
+                </li>
+
+            </ul><br>
+            <h4>Stack Used:</h4>
+		  <p> <ul>
+		  <li>Django for backend</li>
+		  <li>React for frontend</li>
+		  <li>Backend hosted on Heroku</li>
+		  <li>Backend is done mainly using the Django Rest Framework</li>
+		  </ul> 
+      <h6><a href="https://drive.google.com/drive/folders/1TGHrs8JLdGduOLr_ub_7X2WdkIQuht1u?usp=sharing" target="_blank">Project link</a></h6>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+  
+        <div class="pricing-column col-lg-3 col-md-6 col-md-12 ">
+          <div class="card">
+  
+            <div class="card-header">
+              <h4 style="text-align: center;">Team Tesseract </h4>
+            </div>
+  
+            <h5 style="text-align: center;">M S Ramaiah Institute Of Technology</h5><br>
+            <h5 style="text-align: center;">Runners <br> Web Development</h5><br>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">
+              Show more
+            </button>
+  
+            <!-- Modal -->
+            <div class="modal fade " id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Team Tesseract</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h4>
+                      Key Features:
+                     </h4> 
+                 <br>
+                 <ul>
+                   <li>
+                     <p>Before starting with the project, we did research as to what percentage of
+                       laborers working in the unorganized sector have smartphones, and we
+                       found out that 78% of people working in these sectors, do not have
+                       smartphones.</p>
+                   </li>
+                   <li>
+         <p>So, we came up with an approach in which we can take the data of these
+           laborers using an IVR System (Interactive Voice Response System) in which
+           the laborer just has to give his details on the call and they are stored in the
+           database</p>
+                   
+         <li><p>We then connect them with contractors or people who hire on our platform
+           and they can easily get in touch with the laborers.</p></li>
+           <li><p>We have abided by all the 5 prompts given and the whole of our data is
+             encrypted.</p></li>
+             <li><p>Major advantages of our solution
+               <ol>
+                 <li>No need for smartphones for the laborers</li>
+                 <li>Contractors can easily get in touch with their information.
+         </li>
+                 <li>We have the chat feature as well and they are notified even through SMS.</li>
+               </ol>
+             </p></li>
+                 </ul>
+                       <br>
+                       <h6><a href="https://drive.google.com/drive/folders/1SYvwkjVBqY6rgmlNf8nT-alh_77NwWyd?usp=sharing" target="_blank">Project link</a></h6>
+                     </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+  
+  
+      </div>
+  
     </section>
     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq section-bg">
@@ -326,15 +600,13 @@
         <div class="left box">
           <h2>About us</h2>
           <div class="content">
-            <p>The IEEE Student Branch of UVCE has been interminably striving to hoist the student community and empower
-              its
-              members. The organization's commitment to enhancing and upgrading the core knowledge base of the students
-              to
-              the industry standards is reflected in the host of activities organized by it throughout the year.
-              Rekindled
-              in 2001, the student branch has come to be one of the most recognized student branches across the Region
-              10 of
-              IEEE.</p>
+            <p>Computer Society is one of the most prominent 
+              societies that comes under IEEE UVCE. It acts as a great platform for students
+               of all branches to learn more and contribute to the computing world. Computer
+                Society has been conducting many events since its inception which includes the
+                 Annual National level hackathon CodeFury, the monthly coding competition NCode and 
+                 several workshops to kindle students' interest to update 
+              their knowledge on new upcoming technological advances and improve their programming skills as well.</p>
           </div>
         </div>
         <div class="center box">
@@ -343,18 +615,18 @@
             <div class="place">
 
               <a href="https://goo.gl/maps/P43RC7Qphrq" target="_blank" style="color: white;">
-                <span class="bi bi-geo-alt-fill"></span>
+                <i class="fas fa-map-marker-alt"></i>
                 <span class="text"> UVCE, K R Circle, Bengaluru</span></a>
 
             </div>
             <div class="phone">
               <a id="call" href="tel:123456789" style="color: white;">
-                <span class="bi bi-telephone-fill"></span>
-                <span class="text">XYZ</span></a>
+                <i class="fas fa-mobile-alt"></i>
+                <span class="text">+91 91135 49338</span></a>
             </div>
             <div class="email">
               <a href="mailto:cs.uvce.ieee@gmail.com " target="_blank" style="color: white;">
-                <span class="bi bi-envelope-fill"></span>
+                <i class="fas fa-envelope"></i>
                 <span class="text">cs.uvce.ieee@gmail.com</span></a>
             </div>
           </div>
@@ -408,6 +680,9 @@
 
   <!-- Template Main JS File -->
   <script src="{% static 'js/main.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 
 </body>
 
