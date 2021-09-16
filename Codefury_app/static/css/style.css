@@ -417,6 +417,15 @@ h6 {
   height: 60px;
   transform: scale(-1, 1);
 }
+@media screen and (max-width:500px)
+  {
+   .toggle img  
+    {
+      width:50px;
+      height:50px;
+    }
+  }
+
 .toggle-content {
   display: none;
   width: 100vw;
@@ -1466,5 +1475,14 @@ footer {
   }
   .main-content .box {
     margin: 5px 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* .btn.btn-dark {
+  } */
+  button#itscorrect.btn:not(:disabled):not(.disabled) {
+    
+    margin-bottom: 45px;
   }
 }
