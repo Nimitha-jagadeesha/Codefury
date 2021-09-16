@@ -837,19 +837,19 @@ h6 {
   margin-top: -30px;
   color: white;
   text-align: center;
-  text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000;
+  text-shadow: 4px 4px 4px #000;
 }
 
 #count_ul span {
   display: block;
   font-size: 3rem;
-  text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000;
+  text-shadow:4px 4px 4px #000;
 }
 
 #timer {
   margin-bottom: -25px;
   margin-top: -10vh;
-  text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000;
+  text-shadow:4px 4px 4px #000;
 }
 #timerh5 {
   font-family: "Audiowide", Helvetica;
@@ -857,7 +857,7 @@ h6 {
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
-  text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000;
+  text-shadow: 4px 4px 4px #000;
 }
 /* @media (max-width: 991px) {
   #timerh5{
