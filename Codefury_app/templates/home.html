@@ -56,7 +56,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+    {% if message %}
+    <script>
+      alert('{{ message }}');
+  </script>
 
+{% endif %}
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -79,6 +84,8 @@
           <li><a class="nav-link scrollto" href="#sponser">Sponsors</a></li>
           <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
           <li><a class="nav-link scrollto" href="#pastwinners">Past winners</a></li>
+          <li><a class="nav-link scrollto" href="#deep-dive">Deep Dive</a></li>
+          <li><a class="nav-link scrollto" href="#faq">FAQs</a></li>
           <li><a class="nav-link scrollto" href="#footercontact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -327,7 +334,7 @@
       </div>
     </section>
     <!-- ======= Scroll of Honour Section ======= -->
-    <section class="scroll" id="scrollofhonour">
+    <section class="scroll" id="deep-dive">
 
       <div class="row">
         <div class="section-title">
@@ -726,7 +733,7 @@
               </div>
               <br>
               <button type="submit" name="check" id="itscorrect" class="btn btn-dark"
-                style="background-color:black; margin-top:-10px;margin-bottom:45px">Send</button>
+                style="margin-top: -28px;">Send</button>
             </form>
 
           </div>
