@@ -53,7 +53,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #37517e;
+  border: 6px solid #214342;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -412,9 +412,9 @@ h6 {
   color: white;
   margin-top: 0px;
 }
-.toggle img{
-  width:60px;
-  height:60px;
+.toggle img {
+  width: 60px;
+  height: 60px;
   transform: scale(-1, 1);
 }
 .toggle-content {
@@ -463,7 +463,7 @@ h6 {
   margin-top: 25px;
   height: 25px;
   width: 25px;
-  outline:none;
+  outline: none;
   border-radius: 50%;
   margin-bottom: 30px;
 }
@@ -484,13 +484,11 @@ h6 {
   font-family: "Courier";
   font-size: 25px;
   margin: 10px 0 0 10px;
-
 }
 
 .cmd span {
   animation: blink 1s infinite;
 }
-
 
 @keyframes blink {
   to {
@@ -683,9 +681,7 @@ h6 {
   line-height: 56px;
   color: #fff;
   font-family: "Audiowide", Helvetica;
-
 }
-
 
 #hero h2 {
   color: rgba(255, 255, 255, 0.6);
@@ -843,13 +839,13 @@ h6 {
 #count_ul span {
   display: block;
   font-size: 3rem;
-  text-shadow:4px 4px 4px #000;
+  text-shadow: 4px 4px 4px #000;
 }
 
 #timer {
   margin-bottom: -25px;
   margin-top: -10vh;
-  text-shadow:4px 4px 4px #000;
+  text-shadow: 4px 4px 4px #000;
 }
 #timerh5 {
   font-family: "Audiowide", Helvetica;
@@ -956,10 +952,9 @@ section {
 
 .section-title p {
   margin-bottom: 0;
-  
 }
-#about p{
-  text-align:justify;
+#about p {
+  text-align: justify;
 }
 /*--------------------------------------------------------------
 # sponser
@@ -1195,21 +1190,19 @@ section {
 /*--------------------------------------------------------------
 # iframe videos Details
 --------------------------------------------------------------*/
-#videos
-{
-  background-color:white;
+#videos {
+  background-color: white;
 }
 
 /*--------------------------------------------------------------
 # Scroll of Honour Section
 --------------------------------------------------------------*/
-.scroll
-{
-  background-color:white;
-  padding:30px;
+.scroll {
+  background-color: white;
+  padding: 30px;
 }
-.scroll div{
-  padding:15px;
+.scroll div {
+  padding: 15px;
 }
 /*--------------------------------------------------------------
 # Frequently Asked Questions
@@ -1364,6 +1357,9 @@ section {
   font-size: 2.1875rem;
   font-weight: 600;
   color: #202020;
+}
+textarea.form-control {
+  height: 10rem;
 }
 
 footer {
