@@ -1468,3 +1468,12 @@ footer {
     margin: 5px 0;
   }
 }
+
+@media screen and (max-width: 575px) {
+  /* .btn.btn-dark {
+  } */
+  button#itscorrect.btn:not(:disabled):not(.disabled) {
+    
+    margin-bottom: 45px;
+  }
+}
