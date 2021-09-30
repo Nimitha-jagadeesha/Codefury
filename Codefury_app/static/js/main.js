@@ -211,7 +211,7 @@ function hide_ann() {
     hour = minute * 60,
     day = hour * 24;
 
-  let birthday = "Oct 01, 2021 09:00:00",
+  let birthday = "Oct 02, 2021 09:00:00",
     countDown = new Date(birthday).getTime(),
     x = setInterval(function () {
       let now = new Date().getTime(),
@@ -249,7 +249,6 @@ function hide_ann() {
         document.getElementById("hours").innerHTML = "00";
         document.getElementById("minutes").innerHTML = "00";
         document.getElementById("seconds").innerHTML = "00";
-
         clearInterval(x);
       }
       //seconds
