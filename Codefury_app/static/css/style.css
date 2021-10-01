@@ -1030,21 +1030,21 @@ section {
   flex-wrap: wrap;
 }
 #sponser .card:nth-child(1):before {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/GeeksforGeeks.svg/1280px-GeeksforGeeks.svg.png);
+  background-image: url("/static/img/gfg.webp");
   background-size: 80% auto;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 #sponser .card:nth-child(2):before {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Dell_logo_2016.svg/1200px-Dell_logo_2016.svg.png);
-  background-size: 60% auto;
+  background-image: url("/static/img/tejus.webp");
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top 40% left 1%;
 }
 
 #sponser .card:nth-child(3):before {
-  background-image: url(https://2.bp.blogspot.com/-Fg6MZyTSqkA/W1XA4w7v3WI/AAAAAAAAtT4/jVC7R2TbUggPqIn3vpao-jXQvZkMt1LugCLcBGAs/s1600/Rakuten-logo-2018.png);
+  background-image: url();
   background-size: 80% auto;
   background-repeat: no-repeat;
   background-position: center center;
